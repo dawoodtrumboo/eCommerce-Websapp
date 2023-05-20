@@ -1,0 +1,53 @@
+body{
+    color: yellow;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    background-color: black;
+}
+.main{
+    width: 70vw;
+}
+.navbar{
+    background-color: darkgrey;
+    width: 70%;
+    height: auto;
+
+
+}
+.searchbar{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+}
+.searchbar>*{
+    margin:8px;
+}
+.searchbar a{
+    /* border: 1px solid green; */
+    border-radius: 20px;
+    padding: 4px;
+    background-color: lightgray;
+}
+.searchbar a::after{
+   
+    margin-left: 5px;
+    content: "^";
+}
+.searchbar input{
+    border-radius: 20px;
+    width: 70%;
+    border:none;
+}
+#searchinput{
+    /* border: 1px black solid ; */
+    width: 80%;
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+}
+#searchinput::after{
+    content: "sadsa";
+    position: absolute;
+    left:95%;
+}
