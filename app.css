@@ -62,8 +62,12 @@ body::before{
 
 }
 #mainlogo{
-    margin-right: 10%;
-}
+    margin-right: 0px;
+    }
+    .logosize{
+        width: 10.5rem;
+        
+    }
 .searchbar{
     /* border: 1px solid black; */
     display: flex;
@@ -216,10 +220,11 @@ body::before{
 /*-----------FRONT GRID STARTS HERE-------------*/
 
 .grid-container1{
+    width: 100%;
     margin-top: 1.5rem;
     display: grid;
     gap: 1rem;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
 }
 .nested-grid1{
     display: grid;
@@ -227,17 +232,73 @@ body::before{
     gap: 1rem;
     grid-template-columns: repeat(3,1fr);
 }
-
 .nested-grid2{
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(4,1fr);
 }
 .box{
-    background-color: #EB6D20;
-    height: 100px;
+    /* background-color: #EB6D20; */
+    border:1px solid #fa7e1e;
+    height: auto;
     border-radius: 5px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
 }
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nested3 .box{
+    display: flex;
+    align-items: center;
+    background-color: #F5F6F8;
+}
+.nested3 .box>div{
+    height: 100%;
+    width: 100%;
+   
+    margin:20px 10px 20px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nested3 .img{
+    background-position: center;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 100px;
+}
+.nested3 .img1{
+    background-image: url(resources/Slides/unsplash_bU8TeXhsPcY.png);
+
+}
+.nested3 .img2{
+    background-image: url(resources/Slides/unsplash_esRJtEsvJhU.png);
+
+}
+.nested3 .img3{
+    background-image: url(resources/Slides/unsplash_m_7p45JfXQo.png);
+
+}
+
+.nested3 .text{
+    margin-left: 1em;
+    /* border: 1px solid black; */
+    width: 60%;
+}
+
+/* .nested1>:nth-child(1){
+    background-image: url(resources/Slides/Group\ 8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
   
 /*-----------FRONT GRID ENDS HERE---------------*/
 
@@ -348,30 +409,92 @@ body::before{
 /*-------------FOOTER GRID STARTS HERE------------------*/
 
 .fcontainer{
+    position: relative;
+     height: auto;
+    max-height: 50vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 6fr 1fr;
 }
-.fcontainer ul{
+.logocontainer>div{
+    width: 60%;
+}
+.social{
+  
+    width: 100%;
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    padding-left: 0px;
+    gap: 3px;
+    
+}
+.social li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social i{
+   
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.fa-twitter{
+    background-color: #1DA1F2;
+}
+.fa-instagram{
+    background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+}
+.fa-facebook{
+    background-color: #1877F2;
+}
+.fa-linkedin-in{
+    background-color:#2867B2;
+}
+.sec ul{
+    padding-left: 0;
+   
+    list-style: none;
+    display: inline-block;
+    text-align: left;
 }
 .fcontainer li{
     padding-bottom: 1rem;
+    text-align: left;
 }
 .logocontainer{
+    width: 100%;
     grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .textcontainer{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
 
-
+.f-text{
+    display: flex;    
+ 
+}
 .f-text ul{
+    padding-left: 0;
+   
     display: flex;
+    list-style: none;
+    margin-top: 1.5rem;
 }
 .f-text li{
-    margin-right: 2.5   rem;
+    margin-right: 2.5rem;
+    padding: 0px;
 }
-
+#scroll-to-top{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 /*-------------FOOTER GRID ENDS HERE-------------------*/

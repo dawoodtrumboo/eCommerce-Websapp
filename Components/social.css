@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    width: 200px;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding-left: 0;
+    height: auto;
+    /* width: auto; */
+
+}
+li{
+    border: 1px solid red;
+    /* height: 2rem;
+    width: 2rem; */
+    border-radius:50%;
+    padding: 10px;
+    background-color: blue;
+}
+i{
+    font-size: 20px;
+
+}
