@@ -1,14 +1,18 @@
 :root{
     --font-size: 14px ;
 }
+
 body{
-    height: 10000px;
+    width: 100vw;
+    height: auto;
     margin:0;
     position: relative;
     display: flex;
     justify-content: center;
     color: var(--primary-color);
     font-size: var(--font-size);
+    overflow-x: hidden;
+   
     
 }
 body::before{
@@ -23,6 +27,7 @@ body::before{
 }
 
 #center-body{
+    /* border: 1px solid black; */
     width:70vw;
     height: auto;
     /* border: 1px solid blue; */
@@ -35,6 +40,16 @@ body::before{
 }
 .marginbottom{
     margin-bottom: 2rem;
+}
+.overlay{
+    margin: 2.5rem 0rem;
+    position: absolute;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:110%;
+    background-color:#F5F6F8;
 }
 
 /*---------NAVIGATION BAR STARTS HERE---------------*/
@@ -239,7 +254,6 @@ body::before{
 }
 .box{
     /* background-color: #EB6D20; */
-    border:1px solid #fa7e1e;
     height: auto;
     border-radius: 5px;
     padding: 0px;
@@ -309,6 +323,8 @@ body::before{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: auto;
+    
 }
 
 .carosol-slider>*{
@@ -316,17 +332,50 @@ body::before{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #EB6D20;
-    width: 10%;
+    /* border: 1px solid #EB6D20; */
+    width: auto;
     height: 130px;
+    /* margin-right: 1rem; */
+    
 
 }
+.carosol-slider>*>*{
+    margin-bottom: .5rem;
+    /* border: 1px solid #EB6D20; */
+    height: 9rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.carosol-slider>*>*>*>p{
 
+    width: 60%;
+    margin:10px;
+    margin-bottom: 0px;
+    font-size: 10px;
+}
 
+.carosol-slider>*>* img{
+    width: 90%;
+    height: 90%;
+}
 /*-------------1st CAROSOL SLIDER ENDS HERE-------------------*/
 
 /*-------------2nd CAROSOL SLIDER STARTS HERE-------------------*/
+.carosol-slider-label{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .carosol-slider-label div{
+    text-align: center;
+    /* background-color: black; */
+    width: 1000px;
     height:70px;
     border: none;
     border-bottom: 1px solid #E9E9E9;  
@@ -342,8 +391,9 @@ body::before{
 /*-------------2nd CAROSOL SLIDER ENDS HERE-------------------*/
 
 #blue-box{
+    color: white;
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     background-color: #5959D9;
     border-radius: 5px;
     display: flex;
@@ -352,11 +402,13 @@ body::before{
 }
 #blue-box>div{
     /* background-color: yellow; */
+    
     height: 70%;
     width: 85%;
 }
 
 .inner-blue-box-text{
+    margin-bottom: 3rem;
     /* background-color: green; */
     width: 40%; 
 }
@@ -409,6 +461,7 @@ body::before{
 /*-------------FOOTER GRID STARTS HERE------------------*/
 
 .fcontainer{
+    margin-top: 7rem;
     position: relative;
      height: auto;
     max-height: 50vh;
